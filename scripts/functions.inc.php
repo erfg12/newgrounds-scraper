@@ -39,8 +39,8 @@ class tagSpider {
 		$postdata = "username=".$username."&password=".$password."&referrer=http://www.newgrounds.com/&remember=yes";
 		$ch = curl_init();
 		curl_setopt ($ch, CURLOPT_URL, $url);
-		curl_setopt ($ch, CURLOPT_PROXY, 'zproxy.lum-superproxy.io:22225');
-		curl_setopt ($ch, CURLOPT_PROXYUSERPWD, "lum-customer-hl_2d1e3b7e-zone-static:ynxjvpb1dxgj");
+		//curl_setopt ($ch, CURLOPT_PROXY, 'PROXY_URL:PORT');
+		//curl_setopt ($ch, CURLOPT_PROXYUSERPWD, "PROXY_PASS");
 		curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 		curl_setopt ($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6");
 		curl_setopt ($ch, CURLOPT_TIMEOUT, 60);
@@ -75,8 +75,8 @@ class tagSpider {
 			$this->ch = curl_init ();
 			curl_setopt ($this->ch, CURLOPT_POST, true);
 			curl_setopt ($this->ch, CURLOPT_POSTFIELDS, $rate_e.$rate_t.$rate_m.$rate_a);
-			curl_setopt ($this->ch, CURLOPT_PROXY, 'zproxy.lum-superproxy.io:22225');
-			curl_setopt ($this->ch, CURLOPT_PROXYUSERPWD, "lum-customer-hl_2d1e3b7e-zone-static:ynxjvpb1dxgj");
+			//curl_setopt ($this->ch, CURLOPT_PROXY, 'PROXY_URL:PORT');
+			//curl_setopt ($this->ch, CURLOPT_PROXYUSERPWD, "PROXY_PASS");
 			curl_setopt ($this->ch, CURLOPT_FOLLOWLOCATION, true);
 			curl_setopt ($this->ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt ($this->ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A537a Safari/419.3');
@@ -100,8 +100,8 @@ class tagSpider {
 			$this->ch = curl_init ();
 			curl_setopt ($this->ch, CURLOPT_POST, true);
 			curl_setopt ($this->ch, CURLOPT_POSTFIELDS, $rate_e.$rate_t.$rate_m.$rate_a);
-			curl_setopt ($this->ch, CURLOPT_PROXY, 'zproxy.lum-superproxy.io:22225');
-			curl_setopt ($this->ch, CURLOPT_PROXYUSERPWD, "lum-customer-hl_2d1e3b7e-zone-static:ynxjvpb1dxgj");
+			//curl_setopt ($this->ch, CURLOPT_PROXY, 'PROXY_URL:PORT');
+			//curl_setopt ($this->ch, CURLOPT_PROXYUSERPWD, "PROXY_PASS");
 			curl_setopt ($this->ch, CURLOPT_FOLLOWLOCATION, true);
 			curl_setopt ($this->ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt ($this->ch, CURLOPT_URL, $this->url);
